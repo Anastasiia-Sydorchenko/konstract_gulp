@@ -17,27 +17,24 @@
 <body>
 
    <!-- TOP-SECTION -->
-   <div id="top" class="top-bg d-flex justify-content-center align-items-center">
-      <div class="top-section d-flex flex-column align-items-center justify-content-between">
-         <div class="row logo">
-            <div class="col d-flex justify-content-center">
-               <img src="./images/dist/logo.png" alt="logo">
-            </div>
-         </div>
+   <div id="top" class="top-bg d-flex justify-content-center">
+      
+      <!-- MOBILE MENU -->
+      <div class="header__burger d-block d-md-none">
+         <span></span>
+      </div>
+      <nav class="header__menu text-center d-block d-md-none">
+         <ul class="header__list">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#our-story">About</a></li>
+            <li><a href="#our-capabilities">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contacts">Contact</a></li>
+         </ul>
+      </nav>
 
-         <!-- MOBILE MENU -->
-         <div class="header__burger d-block d-md-none">
-            <span></span>
-         </div>
-         <nav class="header__menu text-center d-block d-md-none">
-            <ul class="header__list">
-               <li><a href="#top">Home</a></li>
-               <li><a href="#our-story">About</a></li>
-               <li><a href="#our-capabilities">Services</a></li>
-               <li><a href="#work">Work</a></li>
-               <li><a href="#contacts">Contact</a></li>
-            </ul>
-         </nav>
+      <div class="top-section d-flex flex-column align-items-center justify-content-between">
+         <a href="#" class="logo"><img src="./images/dist/logo.png" alt="logo"></a>
 
          <div class="text-center">
             <h1>PARTNER WITH KONSTUCT</h1>
@@ -49,13 +46,12 @@
       </div>
    </div>
 
-   <div class="container" id="scroll-down">
-
-      <!-- MAIN-MENU -->
+   <!-- MAIN-MENU -->
+   <div class="container">
       <div class="row main-menu d-flex align-items-baseline">
-         <div class="col d-none d-md-block logo">
+         <a href="#" class="col d-none d-md-block logo">
             <img src="./images/dist/logo-black.png" alt="logo">
-         </div>
+         </a>
          <div class="col d-none d-md-block">
             <nav class="d-flex justify-content-between">
                <a href="#top">Home</a>
@@ -66,13 +62,17 @@
             </nav>
          </div>
       </div>
+   </div>
 
-      <!-- OUR STORY -->
+   <!-- OUR STORY -->
+   <div class="container">
       <div class="our-story" id="our-story">
+
          <div class="header d-flex flex-column align-items-center">
             <h2>Our story</h2>
             <div class="header_bottom-line"></div>
          </div>
+
          <div class="row inner_content d-flex align-items-center">
             <div class="text col-sm-12 col-lg ">
                <p class="bold">Founded in 2011 by John Mathew Smith, <span class="text-blue">Konstruct</span> has become
@@ -81,6 +81,7 @@
                   euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer
                   adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
             </div>
+
             <div class="visual col-md-8 col-lg d-flex justify-content-between">
                <div class="item">
                   <span>We <br> plan</span>
@@ -95,10 +96,13 @@
                   <img src="./images/dist/our-story-3.png" alt="">
                </div>
             </div>
+
          </div>
       </div>
+   </div>
 
-      <!-- OUR CAPABILITIES -->
+   <!-- OUR CAPABILITIES -->
+   <div class="container">
       <div class="row our-capabilities d-flex justify-content-between" id="our-capabilities">
          <div class="col col-md-4 header">
             <h2>OUR CAPABILITIES</h2>
@@ -109,41 +113,94 @@
                tincidunt ut laoreet dolore magna aliquam erat</span>
          </div>
          <div class="col col-md-3 services_btn__wrapper">
-            <button class="services_btn">All services</button>
+            <button class="services_btn main_btn">All services</button>
          </div>
       </div>
 
-      <div class="row capabilities_items d-flex justify-content-between">
-         <div class="col-12 col-md-3 item">
-            <div class="img_container">
-               <img src="images/dist/capabilities-1.png" alt="">
-            </div>
-            <div class="content">
-               <h3>Project and construction management</h3>
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                  laoreet dolore magna aliquam erat.</p>
-            </div>
+      <div class="row capabilities_items">
+      <div class="col-12 col-md-3 item">
+         <div class="img_container">
+            <img src="images/dist/capabilities-1.png" alt="">
          </div>
-         <div class="col-12 col-md-3 item">
-            <div class="img_container">
-               <img src="images/dist/capabilities-2.png" alt="">
-            </div>
-            <div class="content">
-               <h3>Structure audit and maintenance</h3>
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                  laoreet dolore magna aliquam erat.</p>
-            </div>
+         <div class="content">
+            <h3>Project and construction management</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+               laoreet dolore magna aliquam erat.</p>
          </div>
-         <div class="col-12 col-md-3 item">
-            <div class="img_container">
-               <img src="images/dist/capabilities-3.png" alt="">
-            </div>
-            <div class="content">
-               <h3>Factory construction and modeling</h3>
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                  laoreet dolore magna aliquam erat.</p>
-            </div>
+      </div>
+
+      <div class="col-12 col-md-3 item">
+         <div class="img_container">
+            <img src="images/dist/capabilities-2.png" alt="">
          </div>
+         <div class="content">
+            <h3>Structure audit and maintenance</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+               laoreet dolore magna aliquam erat.</p>
+         </div>
+      </div>
+      
+      <div class="col-12 col-md-3 item">
+         <div class="img_container">
+            <img src="images/dist/capabilities-3.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Factory construction and modeling</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+               laoreet dolore magna aliquam erat.</p>
+         </div>
+      </div>
+      </div>
+
+      <div class="capabilities_items__mobile d-block d-md-none">
+         <div id="capabilities_carousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+               <div class="carousel-item active text-center">
+                  <div class="img_container">
+                     <img src="images/dist/capabilities-1.png" alt="">
+                  </div>
+                  <div class="content">
+                     <h3>Project and construction management</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat.</p>
+                  </div>
+               </div>
+
+               <div class="carousel-item text-center">
+                  <div class="img_container">
+                     <img src="images/dist/capabilities-2.png" alt="">
+                  </div>
+                  <div class="content">
+                     <h3>Structure audit and maintenance</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat.</p>
+                  </div>
+               </div>
+
+              <div class="carousel-item text-center">
+                  <div class="img_container">
+                     <img src="images/dist/capabilities-3.png" alt="">
+                  </div>
+                  <div class="content">
+                     <h3>Factory construction and modeling</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat.</p>
+                  </div>              
+               </div>
+            </div>
+
+            <div class="carousel_buttons d-flex justify-content-between">
+               <button class="carousel_btn" type="button" data-bs-target="#capabilities_carousel"  data-bs-slide="prev">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                </button>
+    
+                <button class="carousel_btn" type="button" data-bs-target="#capabilities_carousel"  data-bs-slide="next">
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </button>
+            </div>
+          </div>
       </div>
    </div>
 
@@ -151,12 +208,10 @@
    <div class="bottom">
 
       <div class="bottom_img__bg" id="work">
-         <div class="container">
-            <div class="content">
-               <h2>Want to build <br> something amazing?</h2>
-               <div class="button_wrapper d-flex justify-content-center">
-                  <button>Get in touch</button>
-               </div>
+         <div class="content">
+            <h2>Want to build <br> something amazing?</h2>
+            <div class="button_wrapper d-flex justify-content-center">
+               <button class="main_btn">Get in touch</button>
             </div>
          </div>
       </div>
@@ -171,7 +226,7 @@
                <div class="col form">
                   <form action="#">
                      <input type="email" name="email" id="email" placeholder="test@youremail.com">
-                     <button class="footer_btn" type="submit">Signup</button>
+                     <button class="footer_btn main_btn" type="submit">Signup</button>
                   </form>
                </div>
             </div>

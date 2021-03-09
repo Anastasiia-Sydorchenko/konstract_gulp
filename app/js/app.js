@@ -1,5 +1,8 @@
 // // Import jQuery module (npm i jquery)
 import $ from 'jquery'
+import { createPopper } from '@popperjs/core'
+import bootstrap from 'bootstrap'
+
 // window.jQuery = $
 // window.$ = $
 
