@@ -1,55 +1,6 @@
 :root {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: calc(15px + 3 * ((100vw - 320px) / (1440 - 320)));
-    color: $main-font-color;
-    letter-spacing: 2.3px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h3 {
-    color: $main-font-color;
-    font-size: calc(13px + 3 * ((100vw - 320px) / (1440 - 320)));
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-h4 {
-    font-size: calc(11px + 1 * ((100vw - 320px) / (1440 - 320)));
-    letter-spacing: .8px;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-}
-
-.main_btn {
-    color: #ffffff;
-    font-size: calc(11px + 2 * ((100vw - 320px) / (1440 - 320)));
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 2px solid #00a4e5;
-    background-color: #00a4e5;
-    padding: 1.3em 2em;
-
-    &:hover {
-        background-color: #ffffff;
-        color: #00a4e5;
-        transition: .3s ease-in-out;
-    }
-
-    &:hover,
-    &:focus {
-        outline: none;
-    }
-}
-
-.header_bottom-line {
-    width: 5rem;
-    border-bottom: 2px solid #00a4e5;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.5;
 }
 
 // TOP-SECTION
@@ -73,18 +24,18 @@ h4 {
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 0.09em;
         font-size: calc(40px + 20 * ((100vw - 320px) / (1440 - 320)));
-        color: $top-section-color;
+        color: $main-color_white;
         padding-top: 10vh;
     }
 
     .subtitle {
-        color: $top-section-color;
+        color: $main-color_white;
         font-size: calc(14px + 2 * ((100vw - 320px) / (1440 - 320)));
     }
 
     .scroll {
         a {
-            color: $top-section-color;
+            color: $main-color_white;
             font-size: calc(11px + 1 * ((100vw - 320px) / (1440 - 320)));
             letter-spacing: 4px;
             text-transform: uppercase;
@@ -95,9 +46,9 @@ h4 {
 
 // MAIN-MENU
 .main-menu {
-    background-color: #ffffff;
+    background-color: $main-color_white;
     z-index: 1;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $border-color;
 
     nav {
         padding: 20px 0;
@@ -105,13 +56,13 @@ h4 {
         a {
             text-decoration: none;
             text-transform: uppercase;
-            color: $main-font-color;
+            color: $main-color_grey;
             font-size: calc(11px + 1 * ((100vw - 320px) / (1440 - 320)));
             letter-spacing: 0.08em;
 
             &:hover {
-                color: #00a4e5;
-                transition: .5s;
+                color: $main-color-blue;
+                @include transition;
             }
         }
     }
@@ -128,7 +79,7 @@ h4 {
 
             a {
                 text-decoration: none;
-                color: #000000;
+                color: $main-color_black;
                 text-transform: uppercase;
                 font-size: calc(25px + 5 * ((100vw - 320px) / (1440 - 320)));
             }
@@ -148,18 +99,18 @@ h4 {
         .text {
             .bold {
                 width: 90%;
-                color: $main-font-color;
+                color: $main-color_grey;
                 font-size: calc(15px + 5 * ((100vw - 320px) / (1440 - 320)));
                 font-weight: 700;
 
                 .text-blue {
-                    color: #00a4e5;
+                    color: $main-color-blue;
                 }
             }
 
             .regular {
                 width: 95%;
-                color: $main-font-color;
+                color: $main-color_grey;
                 font-size: calc(12px + 1 * ((100vw - 320px) / (1440 - 320)));
                 margin-bottom: 0;
             }
@@ -185,7 +136,7 @@ h4 {
                 span {
                     position: absolute;
                     font-weight: 800;
-                    color: #ffffff;
+                    color: $main-color_white;
                     font-size: calc(15px + 9 * ((100vw - 320px) / (1440 - 320)));
                     text-transform: uppercase;
                     padding: 13px;
@@ -206,7 +157,7 @@ h4 {
     }
 
     .text {
-        color: $main-font-color;
+        color: $main-color_grey;
         font-size: calc(12px + 1 * ((100vw - 320px) / (1440 - 320)));
     }
 
@@ -222,7 +173,7 @@ h4 {
     justify-content: space-between;
 
     .item {
-        border: 1px solid #e6e6e6;
+        border: 1px solid $border-color;
         display: block;
         padding: 2% 3%;
         width: 30%;
@@ -235,7 +186,7 @@ h4 {
        }
 
         p {
-            color: $main-font-color;
+            color: $main-color_grey;
             font-size: calc(12px + 1 * ((100vw - 320px) / (1440 - 320)));
         }
     }
@@ -261,11 +212,11 @@ h4 {
 }
 
 footer {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: $main-color_black;
+    color: $main-color_white;
 
     .black-bg {
-        background-color: #000000;
+        background-color: $main-color_black;
     }
 
     .company {
@@ -280,7 +231,7 @@ footer {
         padding: 35px 0;
 
         h2 {
-            color: #ffffff;
+            color: $main-color_white;
             text-transform: none;
             font-size: calc(17px + 5 * ((100vw - 320px) / (1440 - 320)));
         }
@@ -291,7 +242,7 @@ footer {
         }
 
         input {
-            border: 1px solid #ffffff;
+            border: 1px solid $main-color_white;
             padding: 10px;
             width: 60%;
             -webkit-appearance: none;
@@ -320,13 +271,13 @@ footer {
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
-                    color: #ffffff;
+                    color: $main-color_white;
                     font-size: calc(11px + 1 * ((100vw - 320px) / (1440 - 320)));
                     letter-spacing: .8px;
 
                     &:hover {
-                        color: #00a4e5;
-                        transition: .3s;
+                        color: $main-color-blue;
+                        @include transition;
                     }
                 }
             }
@@ -348,12 +299,12 @@ footer {
         justify-content: space-around;
 
         a {
-            color: #ffffff;
+            color: $main-color_white;
             font-size: 20px;
 
             &:hover {
-                color: #00a4e5;
-                transition: .3s;
+                color: $main-color-blue;
+                @include transition;
             }
         }
     }
@@ -406,14 +357,14 @@ footer {
       .links__dropdown {
 
          button {
-            background-color: #00a4e5;
+            background-color: $main-color-blue;
             outline: none;
 
             &:hover,
             &:focus {
-               color: #00a4e5;
-               background-color: #ffffff;
-               transition: .35s;
+               color: $main-color-blue;
+               background-color: $main-color_white;
+               @include transition;
             }
          }
 
@@ -421,9 +372,9 @@ footer {
 
            .dropdown-menu {
                .dropdown-item:hover {
-                  background-color: #00a4e5;
-                  transition: .35s;
-                  color: #ffffff;
+                  background-color: $main-color-blue;
+                  color: $main-color_white;
+                  @include transition;
                }    
             }
       }
@@ -444,23 +395,23 @@ footer {
 
         span {
             position: absolute;
-            background-color: #ffffff;
+            background-color: $main-color_white;
             left: 0;
             width: 100%;
             height: 3px;
             top: 8px;
-            transition: all .3s ease 0s;
+            @include transition;
         }
 
         &::before,
         &::after {
             content: '';
-            background-color: #ffffff;
+            background-color: $main-color_white;
             position: absolute;
             width: 100%;
             height: 3px;
             left: 0;
-            transition: all .5s ease 0s;
+            @include transition;
         }
 
         &::before {
@@ -476,13 +427,13 @@ footer {
         &::before {
             transform: rotate(45deg);
             top: 8px;
-            background-color: #000000;
+            background-color: $main-color_black;
         }
 
         &::after {
             transform: rotate(-45deg);
             bottom: 8px;
-            background-color: #000000;
+            background-color: $main-color_black;
         }
 
         span {
@@ -497,9 +448,9 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
-        transition: all .5s ease 0s;
-        background-color: #ffffff;
+        background-color: $main-color_white;
         padding-top: 20vh;
+        @include transition;
     }
 
     .header__menu.active {
@@ -551,8 +502,8 @@ footer {
          padding-top: 40px;
 
          .carousel-inner {
-          border-top: 1px solid #e6e6e6;
-          border-bottom: 1px solid #e6e6e6;
+          border-top: 1px solid $border-color;
+          border-bottom: 1px solid $border-color;
 
           .carousel-item {
             padding: 20px;
@@ -562,7 +513,7 @@ footer {
             }
       
             p {
-               color: $main-font-color;
+               color: $main-color_grey;
                font-size: calc(12px + 1 * ((100vw - 320px) / (1440 - 320)));
                margin: 0;
             }
@@ -578,8 +529,8 @@ footer {
             outline: none;
 
             &:hover {
-               color: #00a4e5;
-               transition: .35s;
+               color: $main-color-blue;
+               @include transition;
             }
          }
       }

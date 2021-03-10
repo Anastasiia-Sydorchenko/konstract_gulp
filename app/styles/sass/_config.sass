@@ -1,4 +1,54 @@
-// USER VARIABLES SECTION
+// VARIABLES
+$main-color_grey: #48555b
+$main-color_black: #000000
+$main-color_white: #ffffff
+$main-color-blue: #00a4e5
+$border-color: #e6e6e6
 
-$main-font-color: #48555b
-$top-section-color: #ffffff
+// MIXINS
+@mixin transition
+   -webkit-transition: all 0.35s ease
+   transition: all 0.35s ease
+
+// GENERAL DOCUMENT STYLES
+h2
+   font-weight: 700
+   font-size: calc(15px + 3 * ((100vw - 320px) / (1440 - 320)))
+   color: $main-color_grey
+   letter-spacing: 2.3px
+   text-transform: uppercase
+   text-align: center
+
+h3
+   color: $main-color_grey
+   font-size: calc(13px + 3 * ((100vw - 320px) / (1440 - 320)))
+   text-transform: uppercase
+   font-weight: 700
+
+h4
+   font-size: calc(11px + 1 * ((100vw - 320px) / (1440 - 320)))
+   letter-spacing: .8px
+   text-transform: uppercase
+   margin-bottom: 2rem
+
+.main_btn
+   color: $main-color_white
+   font-size: calc(11px + 2 * ((100vw - 320px) / (1440 - 320)))
+   font-weight: 700
+   text-transform: uppercase
+   border: 2px solid $main-color-blue
+   background-color: $main-color-blue
+   padding: 1.3em 2em
+
+   &:hover
+      background-color: $main-color_white
+      color: $main-color-blue
+      transition: .3s ease-in-out
+
+   &:hover,
+   &:focus 
+      outline: none
+
+.header_bottom-line
+   width: 5rem
+   border-bottom: 2px solid $main-color-blue
