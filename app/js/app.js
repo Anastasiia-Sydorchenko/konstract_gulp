@@ -1,5 +1,7 @@
 // // Import jQuery module (npm i jquery)
 import $ from 'jquery'
+import { createPopper } from '@popperjs/core'
+import bootstrap from 'bootstrap'
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
@@ -24,4 +26,13 @@ $(document).ready(function () {
       $('.header__burger, .header__menu').removeClass('active');
       $('body').removeClass('lock'); // close burger menu after click
    });
+});
+
+// SLOW ANCHOR BUTTON to-down
+var $page = $('html, body');
+ $('a[href*="#"]').click(function() {
+     $page.animate({
+         scrollTop: $($.attr(this, 'href')).offset().top
+     }, 800);
+     return false;
 });
